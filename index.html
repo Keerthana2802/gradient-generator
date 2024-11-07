@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="box">
+            <div class="container">
+                <nav>
+                    <h3>Magic Grad</h3>
+                </nav>
+                <div class="hero">
+                    <h1>Easy Gradient Generator</h1>
+                    <p>Explore Our Gradient Generator Tool to Craft Perfect Color Blends for Your Projects</p>
+                    <a href="#wrapper"><button>Get Started</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div id="wrapper" class="wrapper">
+            <div class="gradient-box"></div>
+            <div class="row options">
+                <div class="column direction">
+                    <p>Direction</p>
+                    <div class="select-box">
+                        <select title="diirection">
+                            <option value="to top">Top</option>
+                            <option value="to right top">Right top</option>
+                            <option value="to right" selected>Right</option>
+                            <option value="to right bottom">Right bottom</option>
+                            <option value="to bottom">Bottom</option>
+                            <option value="to left bottom">Left bottom</option>
+                            <option value="to left">Left</option>
+                            <option value="to left top">Left top</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="column colors">
+                    <p>Colors</p>
+                    <input title="first color" type="color" value="#1488CC">
+                    <input title="second color" type="color" value="#2B32B2">
+                </div>
+            </div>
+            <textarea title="css code" class="row"
+                disabled>background: linear-gradient(to right, #1488cc, #2b32b2);</textarea>
+            <div class="row buttons">
+                <button class="random">Random Colors</button>
+                <button class="copy">Copy Code</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Keerthana Ravi © 2024</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
